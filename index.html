@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="row pb-5">
+                    <div class="col-6">
+                        <img
+                            src="/Images/black.png"
+                            class="img-fluid"
+                            alt="images"
+                            id="watch-image"
+                            style="border-radius: 4px"
+                        />
+                    </div>
+                    <div class="col-6">
+                        <div
+                            class="card-body d-flex flex-column justify-content-center h-100"
+                        >
+                            <h5 class="card-title" id="header-title">
+                                Classy Modern Smart watch
+                            </h5>
+                            <div class="review d-flex">
+                                <img
+                                    src="/Images/SVG/star-fill.svg"
+                                    alt="star-full"
+                                />
+                                <img
+                                    src="/Images/SVG/star-fill.svg"
+                                    alt="star-full"
+                                /><img
+                                    src="/Images/SVG/star-half.svg"
+                                    alt="star-half"
+                                /><img
+                                    src="/Images/SVG/star-blank.svg"
+                                    alt="star-blank"
+                                /><img
+                                    src="/Images/SVG/star-blank.svg"
+                                    alt="star-blank"
+                                />
+                                <span>(2 Review)</span>
+                            </div>
+                            <div class="titile-price">
+                                <del>$99.00</del
+                                ><span id="changeable-price">$99</span>
+                                <label>.00</label>
+                            </div>
+                            <p class="card-text">
+                                I must explain to you how all this mistaken idea
+                                of denoun cing ple praising pain was born and I
+                                will give you a complete account of the system,
+                                and expound the actual teaching.
+                            </p>
+
+                            <div class="d-flex" style="gap: 43px">
+                                <div class="d-flex flex-column">
+                                    <span style="color: #8091a7">Type</span
+                                    ><span class="type">Watch</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span style="color: #8091a7"
+                                        >Model Number</span
+                                    ><span class="type">Forerunner 290XT</span>
+                                </div>
+                            </div>
+                            <div class="band-color">
+                                <span>Band Color</span>
+                                <div class="radio-button">
+                                    <input
+                                        type="radio"
+                                        name="exampleRadios"
+                                        id="exampleRadios"
+                                        value="1"
+                                        checked
+                                        onclick="clickColor(1)"
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="exampleRadios"
+                                        id="exampleRadios"
+                                        value="option2"
+                                        checked
+                                        onclick="clickColor(2)"
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="exampleRadios"
+                                        id="exampleRadios"
+                                        value="option3"
+                                        checked
+                                        onclick="clickColor(3)"
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="exampleRadios"
+                                        id="exampleRadios"
+                                        value="option4"
+                                        checked
+                                        onclick="clickColor(4)"
+                                    />
+                                </div>
+                            </div>
+                            <div class="wrist-color">
+                                <span>Wrist Size</span>
+
+                                <div class="price-btn"></div>
+                            </div>
+
+                            <div class="quantity-add d-flex">
+                                <div class="group-check-btn">
+                                    <button
+                                        class="minus"
+                                        id="minus"
+                                        type="button"
+                                        onclick="minus()"
+                                    >
+                                        <img
+                                            src="/Images/SVG/minus.svg"
+                                            alt="minus"
+                                        />
+                                    </button>
+                                    <input
+                                        id="quantity"
+                                        max="10"
+                                        min="0"
+                                        value="1"
+                                    />
+                                    <button
+                                        class="plus"
+                                        id="plus"
+                                        type="button"
+                                        onclick="add()"
+                                    >
+                                        <img
+                                            src="/Images/SVG/plus.svg"
+                                            alt="plus"
+                                        />
+                                    </button>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    onclick="addToCart()"
+                                >
+                                    Add to Cart
+                                </button>
+                                <button class="heart">
+                                    <img src="/Images/SVG/heart.svg" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div class="d-flex justify-content-center align-items-center pt-5">
+                <div
+                    class="modal fade"
+                    id="exampleModalToggle"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1"
+                >
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div
+                            class="modal-content d-flex modal-width"
+                            style="padding: 44px; gap: 16px; width: 648px"
+                        >
+                            <h1>Your Cart</h1>
+                            <div class="item-title">
+                                <div style="width: 278px">Item</div>
+                                <div class="middle-item">
+                                    <ul style="width: 62px; text-align: center">
+                                        Color
+                                    </ul>
+                                    <ul style="width: 69px; text-align: center">
+                                        Size
+                                    </ul>
+                                    <ul style="width: 59px; text-align: center">
+                                        Qnt
+                                    </ul>
+                                </div>
+                                <div style="width: 91px; text-align: end">
+                                    Price
+                                </div>
+                            </div>
+
+                            <div id="allItems"></div>
+
+                            <div class="total">
+                                <ul style="width: 379px">
+                                    Total
+                                </ul>
+                                <ul
+                                    id="total-count"
+                                    style="width: 50px; text-align: center"
+                                >
+                                    0
+                                </ul>
+                                <ul
+                                    id="total-amount"
+                                    style="width: 80px; text-align: end"
+                                >
+                                    $0
+                                </ul>
+                            </div>
+
+                            <div class="shopping-checkout">
+                                <button class="continue-shopping">
+                                    Continue Shoping</button
+                                ><button class="btn btn-primary">
+                                    Checkout
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="btn d-flex"
+                    style="
+                        background-color: #ffbb5a;
+                        border-radius: 20px;
+                        padding: 8px 24px;
+                        gap: 10px;
+                        align-items: center;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        letter-spacing: 0.26px;
+                        color: #364a63;
+                    "
+                    data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal"
+                >
+                    Checkout
+                    <span
+                        id="checkoutCount"
+                        style="
+                            background-color: white;
+                            padding: 2px 6px;
+                            border-radius: 5px;
+                        "
+                        >0</span
+                    >
+                </button>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+    <script src="script.js"></script>
+</html>
