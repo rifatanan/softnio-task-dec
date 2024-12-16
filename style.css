@@ -1,11 +1,14 @@
+* {
+    font-family: Roboto;
+}
 .content {
     margin-top: 7%;
 }
 
 .card-title {
     padding: 12px 0;
-    font-size: 40px;
     color: #364a63;
+    font-size: 40px;
     font-weight: 700;
     line-height: 44px;
     letter-spacing: -1.2;
@@ -41,6 +44,8 @@
 }
 
 .card-text {
+    padding-top: 20px;
+    padding-right: 4px;
     color: #8091a7;
     font-size: 18px;
     font-weight: 400;
@@ -59,7 +64,6 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
-    font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -158,14 +162,9 @@
 }
 
 .group-btn button {
-    font-family: Nioicon;
     font-size: 18.2px;
     font-weight: 400;
     line-height: 23.1px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
     padding: 3px 8px;
     border: 1px solid #dbdfea;
     background-color: white;
@@ -296,7 +295,6 @@
     padding-right: 4px;
     padding-bottom: 16px;
     border-bottom: 1px solid #dbdfea;
-    font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 23.1px;
@@ -306,7 +304,6 @@
     display: flex;
     justify-content: space-between;
     color: #373737;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
