@@ -1,10 +1,30 @@
 * {
     font-family: Roboto;
 }
-.content {
-    margin-top: 7%;
+
+.allDiv {
+    padding: 80px 100px 0 100px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (min-width: 1080px) {
+    .main {
+        flex-direction: row;
+    }
+    .allDiv {
+        padding: 80px 150px 0 150px;
+    }
+}
+
+.image {
+    width: 630px;
+    height: 650px;
+}
 .card-title {
     padding: 12px 0;
     color: #364a63;
@@ -20,6 +40,7 @@
     padding-bottom: 4px;
     gap: 8px;
 }
+
 .titile-price {
     color: #8091a7;
     padding-top: 20px;
@@ -292,6 +313,7 @@
 .item-description {
     display: flex;
     align-items: center;
+    padding-top: 16px;
     padding-right: 4px;
     padding-bottom: 16px;
     border-bottom: 1px solid #dbdfea;
@@ -303,6 +325,7 @@
 .total {
     display: flex;
     justify-content: space-between;
+    padding: 16px 0;
     color: #373737;
     font-size: 16px;
     font-weight: 700;
