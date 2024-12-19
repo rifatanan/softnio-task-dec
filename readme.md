@@ -21,3 +21,8 @@ A Vanilla JavaScript project built using designs created in Figma. The UI is imp
 3. Alternatively, double-click the `index.html` file to open it in your browser.
 
 ---
+
+## Links
+
+-   [GitHub Repository](https://github.com/rifatanan/softnio-task-dec)
+-   [Live Demo](https://softnio-task-javascript.vercel.app/)
